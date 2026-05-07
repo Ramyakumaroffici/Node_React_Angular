@@ -1,0 +1,150 @@
+MongoDB -
+
+it is developed by MongoDB inc in 2009
+
+it is written in C, C++, javascript.
+
+MongoDB is an open source NoSQL database which provides high performance
+and it is felxible as well.
+
+it is also called as NoSQL database because 
+it doesn't depends on RDBMS(Relational database management system)
+
+
+** we can store unstructured data in mongodb that's why
+it is called as schema less data model.
+
+MongoDB comes under the category of document oriented database.
+
+----------
+
+install mongodb and 
+mongodb shell ---extract the shell 
+ 
+TO RUN THE MONGO SERVER
+mongod --dbpath "c://mongo-data"
+
+and then open shell to run the commands
+
+
+
+-------------------------------
+
+Features of MongoDB
+
+1)document oriented database
+
+2)we have collection - holds the documents
+
+3)we can store unstructured data in MongoDB
+
+4)it is very secure as compare to other databases because 
+it has control and authorisation feature.
+
+-----------------------------------------
+
+Difference between RDBMS & MongoDB
+
+RDBMS                        MongoDB
+
+database                    database
+table                       collection
+records                     document 
+columns                     fields
+primary key                 _id
+
+---------------------------------------
+
+if we specify the _id in the document it will act as a primary key
+
+db.users.insertOne({name:"Ramya",technology:"Node JS",city:"Tami{ Nadu"})
+  acknowledged: true,
+  insertedId: ObjectId('69f1a7b752b124ff1a3682d1')
+}
+
+if we did not assign id for the document it automatically implicitly create the ObjectId
+
+-------------------------
+
+Commands
+
+use mytraining
+
+db.createCollection("users")
+
+show collections
+
+db.users.insertOne({name:"Ramya",technology:"Node JS",city:"Tami{ Nadu"})
+
+db.users.find()
+
+db.users.insertMany([{name:"Alexa",technologu:"React JS",city:"Pune"},{name:"Siri",technology:"Angular",city:"Bangalore"},
+{name:"Maha",technology:"MongoDB",city:"Kerala"}]);
+
+db.users.find({city:"Kerala"});
+[
+  {
+    _id: ObjectId('69f1aaa152b124ff1a3682d4'),
+    name: 'Maha',
+    technology: 'MongoDB',
+    city: 'Kerala'
+  }
+]
+
+ db.users.updateOne({name:"Alexa"},{$set:{city:"Kolkata"}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+ db.users.updateMany({city:"Kolkata"},{$set:{city:"Delhi"}})
+ All the users with city kolkata is changed to city Delhi
+
+  db.users.updateOne({name:"Alexa"},{$set:{age:22}});
+
+
+ db.users.deleteOne({name:'Alexa'})
+
+
+-------------------------
+
+task
+
+db.products.insertMany([{_id:1,name:"mobile",description:"gadget",stock:10,city:"delhi"},
+{_id:2,name:"camera",description:"gadget",stock:10,city:"mumbai"},
+{_id:3,name:"watch",description:"gadget",stock:13,city:"chennai"},
+{_id:4,name:"Ipad",description:"gadget",stock:15,city:"Andhra Pradesh"},
+{_id:5,name:"Airpods",description:"gadget",stock:50,city:"pune"}]);
+{
+  acknowledged: true,
+  insertedIds: { '0': 1, '1': 2, '2': 3, '3': 4, '4': 5 }
+}
+
+-----------------------------------
+
+comparison query operator?
+
+$eq - it matches the value which is equal to the specifying value.
+
+$gt - it matches the value which is greater to the specifying value.
+
+$gte-it matches the value which is greater than equal to the specifying value 
+
+db.users.find({age:{$eq:22}});
+
+db.users.find({age:{$gt:22}});
+
+db.users.find({age:{$gte:22}});
+
+$lt and $lte
+
+$in - it matches the value that is available in the array.
+
+db.users.find({city:{$in:["Gurugram","delhi","kolkata"]}})
+
+$nin -it matches the value that is not available in the array.
+
+ db.products.find({city:{$nin:["chennai","mumbai","pune"]}})

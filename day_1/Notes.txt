@@ -1,0 +1,140 @@
+Node JS-
+
+It is developed by Ryan Dahl in 2009.
+
+It is an open source runtime environment.
+
+It is used to provide the runtime environment to the JS files for execution.
+
+The purpose of Node JS is to execute the JS files outside the web browser.
+
+with the help of Node JS we can interpret the JS code 
+because it has its own interpreter ie V8 engine.
+
+----------------------------------------------
+
+Server Side Scripting Language
+
+It is also called as server side scripting language 
+because it is used to create customised response for the client requests
+
+the script can generate the response directly or it can be connected with any 
+of the database (MongoDB) so that it can retrieve the data from the database, after retrieving the data 
+it will generate and send the response to the client accordingly.
+
+
+------------------------------------------------
+
+Features of Node JS - 
+
+1)  Single threaded programming platform 
+
+it uses the single thread concept.
+
+when the Node JS receives the requests it will process the first
+request after that it will move towards the second process.
+
+2) Event driven 
+
+it will listen the main loop event and it triggers the callback functions
+and( upon completion of the given task the callback function will be called ) so that 
+it doesn't block the execution 
+
+3)It is based on Asynchronous Code(non blocking code)
+
+4) Streams - used to read the data from the source and we 
+can write data to the destination via streams.
+
+-------------------------------------------------
+
+Advantages of Node JS-
+
+1)It is fast in processing  (v8 engine)
+
+2)It is highly extensible because we can extend it according 
+to the demand and requirements
+
+3)It is single programming language in which we can write 
+frontend and backend too. (Express js is the frontend part of node js)
+
+--------------------------------------------
+REPL - Read Eval Print loop
+
+it is a runtime environment which  allows us to enter and execute the code.
+
+---------------------------------------------------
+
+Difference between Synchronous code and Asynchronous code ?
+
+Synchronous code (Blocking code) ---
+
+the code will be executed line by line 
+in the same order in which we have written the code
+
+eg - 
+
+2 task 
+
+task 1 - read file 
+
+task 2 - printing ramya 
+
+
+-----------------------------------------------
+ASynchronous code (Non Blocking code) ---
+
+the code will be executed in the different order 
+in which we have written the code
+
+eg- via callbacks 
+
+2 task 
+
+task 1 - read file 
+
+task 2 - printing ramya 
+
+-------------------------------------------
+
+Modules-
+
+There are 3 types of Modules in Node JS
+
+1) core modules -
+
+they r preinstalled with node JS, there is no need to
+install them separately 
+
+
+eg-
+
+fs-file system
+http - create web server
+readline
+
+2)local modules - 
+
+we can create local modules by ourself in the project.
+
+3)Third party modules  - external packages- 
+npm init
+npm install Express
+npm install mongoose
+npm install cors
+
+in package.json file
+"dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mongoose": "^9.5.0"
+  }
+
+----------------------------------------------
+
+publish package to npm 
+
+--------------------------------------------
+
+Buffers - used to store the binary data.
+
+

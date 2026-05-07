@@ -1,0 +1,69 @@
+React 
+
+React is a fress JS opensource library used to create UI apps.
+
+It is developed and maintained by Facebook (Meta)
+
+Key Features :
+
+DOM : Code - Bytes - Character - Tokens - nodes - DOM 
+every time we add a new element a new DOM is created and the previous DOM will be deleted
+(all will happen in browser only)
+
+
+Virtual DOM -Created By React --- So in virtual DOM the whole tree
+ is get deleted(In local system not in browser 
+ Diffing algo:identify new changes by comparing old virtual DOM with new Virtual DOM)
+
+
+Reconciliation:Apply the changes batch by batch to Browser DOM 
+(Only new node will be given to the browser)
+
+In Virtual DOM they are Js objects not the original DOM so it is light weighted there is no problem 
+if there are many objects as well
+
+-----------------------------------------------------------
+
+Node Package Manager 
+
+vite@latest - Template (it will create the basic project)
+
+npm create vite@latest ecommerce --template react
+
+
+we can create components in two ways - class based and function based
+
+--------------------------------------
+
+Rules of JSX:
+ 
+1. A component must return SIngle PArent element only.
+ 
+2. Like HTML ,JSX also has attributes but some naming conventions might be changing.
+like onclick==onClick, class==className
+ 
+3. Unlike HTML,close all tags properly
+ 
+4. WHen we pass String as a value to attribute then we must wrap it inside ''/""
+ 
+5. WHen we pass Object as a value to attribute then we must wrap it inside {}
+ 
+6. WHen we use JS or JS expresions inside JSX ,they must wrapped inside {}
+
+
+------------------------
+
+Hooks :
+
+useState
+
+useEffect
+This enables us side effects like fetching data, setting timers etc.
+the tasks which are outside of the component
+
+useContext
+
+useRef - uncontrolled component we cannot have the controll over the value it error checking like that.
+
+conditional component
+
