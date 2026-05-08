@@ -9,6 +9,7 @@ import Effectcomp from './components/Hooks/Effectcomp.jsx';
 
 import CustomHook from './components/Hooks/CustomHook.jsx';
 import Refcomp from './components/Hooks/RefComp.jsx';
+import Eventcomp from './components/Event/Eventcomp.jsx';
 
 const virtualDOMroot = createRoot(document.getElementById('root'));
 
@@ -20,5 +21,6 @@ virtualDOMroot.render(
     <Effectcomp />
     <CustomHook />
     <Refcomp/>
+    <Eventcomp/>
   </>
 )

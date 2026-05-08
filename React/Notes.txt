@@ -67,3 +67,8 @@ useRef - uncontrolled component we cannot have the controll over the value it er
 
 conditional component
 
+MouseEvents -onClick,onDoubleClick,onMouseLeave,onMouseEnter
+
+keyboardEvents-onkeypress,onkeyup,onkeydown
+
+Formevents-onSubmit,
