@@ -1,0 +1,130 @@
+Microservices-
+
+It is the collection of small independent services and each
+service is responsible for specific business functionality.
+
+instead of creating one large application, with the help 
+of Microservices we can break it into smaller pieces
+
+eg-
+payment, order, notification, user service 
+
+** each Microservice runs independently and it has its own 
+database(optional) , they can communicate with each other 
+via API's 
+
+all services will work together but they are loosely coupled.
+
+if one service got crashed it will not affect anyother services.
+
+--------------------------------------------------------
+
+Features of Microservices-
+
+1) each service can be deployed without affecting the other 
+service.
+
+2) All services are not tightly dependent on each other.
+
+3) we can scale the service as per the requirement of the service .  
+eg - Payment during peak sales.
+
+4) If one service fails other services will continue 
+working.
+
+--------------------------------------------------------
+
+Architecture of Microservices-
+
+It is based on the design pattern that has structure 
+(collection of small independent services).
+
+It consist of 
+
+1) service component-
+
+service that consist of specific business functionality.
+
+2) Api gateway - 
+
+it is the single entry point for the client request.
+
+3) database - it service has its own database to maintain 
+loose coupling.
+
+4) service can communicate via protocols.
+
+5) security - authentication
+
+6) CI/CD - Automates building of the application, testing ,deployment
+eg - jenkins
+
+--------------------------------------------------
+Task -
+fetch data from the below api in responsive div 
+
+create angular project
+
+component - products
+
+service - Api
+
+https://fakestoreapi.com/products
+
+----------------------------------------------------
+
+to establish the Asynchronous communication between the Microservices
+
+Use Message Brocker-
+
+AMQP - RabbitMQ - To publish it over the cloud 
+
+RabbitMQ - it is a Message broker 
+
+sender ------------------Post office(RabbitMQ)---------------- Receiver
+(sends the letter)       (store and route it)                 (get the letter later)
+
+amqps://vqkbvfie:o8qk6WZt0jl-HM-1XlTKQ5wBwBKaCaPD@leopard.lmq.cloudamqp.com/vqkbvfie
+
+npm install amqplib
+
+--------------------------------
+create a new project Angular/ React with 3 components and integrate in routing
+ 
+1) Home component
+2) About component
+3) Products component
+ 
+ 
+In Products component - fetch below data in responsive table
+
+products=[
+    {
+        "id":1,
+        "name":"Laptop",
+        "description":"Good Quality",
+        "stock":2,
+        "category":"Electronics"
+    },
+    {
+        "id":2,
+        "name":"Table",
+        "description":"Good Quality",
+        "stock":2,
+        "category":"Decor"
+    },
+    {
+        "id":3,
+        "name":"T-shirt",
+        "description":"Good Quality",
+        "stock":21,
+        "category":"Clothing"
+    },
+    {
+        "id":4,
+        "name":"Mobile",
+        "description":"Good Quality",
+        "stock":12,
+        "category":"Electronics"
+    }
+]

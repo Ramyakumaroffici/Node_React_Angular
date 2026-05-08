@@ -1,0 +1,72 @@
+Introduction to web server ?
+
+It deals with request and response model | Client Server Architecture 
+
+
+client----------------request-----http---->server
+
+Server-------------response----------http--------->Client
+
+
+It has Ip address and domain name.
+
+http is used to distribute the information via www (World wide web).
+
+------------------------------
+
+How can we use Node JS with web server ?
+
+with the help of http module we can create web server. and via http protocal
+we can manage request and response.
+
+after testing all the functionalities we will get 
+full flegde application.
+
+
+-------------------------------------
+
+Difference between http1 and http2 ?
+
+working principle http1 ?
+
+whenever the client sends the request to the server , the 
+browser will process the request initially after that the 
+browser will generate the separate request to fetch the data
+from the server.
+
+then the processing time of the application will be increased and the 
+performance of the application will get reduced automatically.
+
+http2 - 
+
+push capabilities-
+
+with the help of push capabilities the server can send the assets 
+to the browser initially and the browser sent back to the client that's why
+the performance of the application is high (no separate request)
+
+Express JS ---
+
+Express JS is the frontend framework for Node JS // Backend framework 
+
+Express JS is Asynchronous in nature
+
+Express JS is faster as compare to other platforms like ASP and JSP.
+
+------------------------
+Features of Express JS-
+
+1)middleware - it acts as a middleware so that 
+we can access request and response objects.
+
+2) It also allows us to define the routes via routing mechanism.
+
+3)It is light weight in nature so it is performance
+efficient.
+
+4)It has its own error handling mechanism.
+
+
+---------------------------------
+
+GET and POST Method 
